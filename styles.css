@@ -1,0 +1,46 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+}
+
+.left-column {
+  height: 500px;
+  flex-basis: 60%;
+  background-color: aquamarine;
+  padding: 10px;
+  background-image: url("https://www.shutterstock.com/shutterstock/photos/717874186/display_1500/stock-vector-food-and-ingredient-kids-hand-drawing-set-pattern-background-circle-shape-illustration-isolated-on-717874186.jpg");
+}
+
+.right-column {
+  display: flex;
+  height: 500px;
+  flex-basis: 40%;
+  background-color: blueviolet;
+  padding: 10px;
+  color: #fefefe;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.welcomeText {
+  color: #fefefe;
+}
+
+.anotherText {
+  color: #fefefe;
+}
+
+.fieldLogin {
+}
+
+.userLoginText {
+  color: #fefefe;
+}

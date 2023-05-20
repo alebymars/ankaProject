@@ -1,46 +1,107 @@
+* {
+  outline: 0 !important;
+}
+
+body {
+  background-color: #886de4;
+}
+
 .wrapper {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
-  height: 700px;
+  height: 90vh;
 }
 
 .left-column {
+  display: flex;
   height: 500px;
   flex-basis: 60%;
-  background-color: aquamarine;
-  padding: 10px;
-  background-image: url("https://www.shutterstock.com/shutterstock/photos/717874186/display_1500/stock-vector-food-and-ingredient-kids-hand-drawing-set-pattern-background-circle-shape-illustration-isolated-on-717874186.jpg");
+  padding: 10px 40px;
+  /* background: center / cover url("./src/images/bg.jpg"); */
+  /* background-color: #7a6aad; */
+  background: linear-gradient(70deg, #f496a6, #c58ebc, #886de4);
+  border-radius: 10px 0 0 10px;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
 }
 
 .right-column {
   display: flex;
   height: 500px;
   flex-basis: 40%;
-  background-color: blueviolet;
+  background-color: #f5f5f5;
   padding: 10px;
-  color: #fefefe;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 0 10px 10px 0;
+  border-width: 0px;
 }
 
 .form {
   display: flex;
   flex-direction: column;
+  width: 300px;
 }
 
 .welcomeText {
   color: #fefefe;
+  text-align: center;
+  padding-top: 55px;
 }
 
 .anotherText {
   color: #fefefe;
+  font-size: 18px;
+  margin-top: -15px;
 }
 
 .fieldLogin {
+  border-width: 0px;
+  padding: 10px 5px;
+  width: 100%;
+  background-color: #eae6ff;
+  border-radius: 20px;
 }
 
 .userLoginText {
+  color: #897fbd;
+}
+
+.loginButton {
+  background: linear-gradient(70deg, #f496a6, #c58ebc, #886de4);
+  padding: 10px 0;
+  border-radius: 20px;
+  border-width: 0px;
+  margin-top: 10px;
   color: #fefefe;
+  width: 150px;
+}
+
+.loginButton:hover {
+  background: linear-gradient(70deg, #ec8da2, #e26da4, #7a6aad);
+  /* width: 145px; */
+}
+
+.loginButtonDiv {
+  display: flex;
+  /* background-color: #c58ebc; */
+  justify-content: center;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+}
+
+.divField {
+  display: flex;
+  border: 2px solid #ddd;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: #eae6ff;
+  border-radius: 20px;
+  padding: 0 10px;
 }

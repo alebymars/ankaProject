@@ -10,9 +10,6 @@
 </head>
 
 <body>
-    <p>
-        Страница авторизации
-    </p>
     <div class="wrapper">
         <div class="left-column">
             <h1 class="welcomeText">
@@ -23,17 +20,24 @@
                 corporis ad modi maxime labore iure nostrum pariatur, suscipit minima, eligendi maiores nisi quis est
                 repellat.
             </p>
+            <img style="mix-blend-mode: multiply; width: 50px; height: 50px;" src="./src/images/onion.jpg" />
         </div>
         <div class="right-column">
             <h2 class="userLoginText">
                 USER LOGIN
             </h2>
             <div class="form">
-                <input class="fieldLogin" title="login" />
-                <input class="fieldPassword" title="password" />
-                <button>
-                    LOGIN
-                </button>
+                <div class="divField">
+                    <img class="icon" src="./src/images/user.png" />
+                    <input class="fieldLogin" type="email" title="login" value="example@mail.com" />
+                </div>
+                <div class="divField">
+                    <img class="icon" src="./src/images/password.png" />
+                    <input class="fieldLogin" type="password" title="password" value="dsagdjgasduyjasgduyg" />
+                </div>
+                <div class="loginButtonDiv">
+                    <input type="button" class="loginButton" value="LOGIN" />
+                </div>
             </div>
         </div>
     </div>

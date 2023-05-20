@@ -3,28 +3,41 @@
 }
 
 body {
+  display: flex;
   background-color: #886de4;
+  justify-content: center;
+  align-items: center;
+  min-width: 930px;
 }
 
 .wrapper {
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   height: 90vh;
+  width: 90%;
+  max-width: 1500px;
 }
 
 .left-column {
   display: flex;
   height: 500px;
   flex-basis: 60%;
-  padding: 10px 40px;
-  /* background: center / cover url("./src/images/bg.jpg"); */
-  /* background-color: #7a6aad; */
   background: linear-gradient(70deg, #f496a6, #c58ebc, #886de4);
   border-radius: 10px 0 0 10px;
   flex-direction: column;
-  /* align-items: center; */
-  /* justify-content: center; */
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.bgLeft-column {
+  width: 90%;
+  height: 100%;
+  padding: 10px 40px;
+  background: center / cover url("./src/images/bg2.png");
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .right-column {
@@ -32,7 +45,6 @@ body {
   height: 500px;
   flex-basis: 40%;
   background-color: #f5f5f5;
-  padding: 10px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -49,13 +61,13 @@ body {
 .welcomeText {
   color: #fefefe;
   text-align: center;
-  padding-top: 55px;
 }
 
-.anotherText {
-  color: #fefefe;
-  font-size: 18px;
-  margin-top: -15px;
+.divLeftBgText {
+  /* background-color: #7a6aadb4; */
+  border-radius: 10px;
+  padding: 10px 30px;
+  /* margin-top: 55px; */
 }
 
 .fieldLogin {
@@ -82,12 +94,10 @@ body {
 
 .loginButton:hover {
   background: linear-gradient(70deg, #ec8da2, #e26da4, #7a6aad);
-  /* width: 145px; */
 }
 
 .loginButtonDiv {
   display: flex;
-  /* background-color: #c58ebc; */
   justify-content: center;
 }
 

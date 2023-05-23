@@ -4,25 +4,35 @@
 
 body {
   display: flex;
-  background-color: #886de4;
+  /* background: center / cover url("../images/nebo.png"); */
+  /* background-color: #886de4; */
   justify-content: center;
   align-items: center;
-  min-width: 930px;
+  /* min-width: 930px; */
+  height: 100vh;
+  backdrop-filter: blur(10px);
+  margin: 0;
+  padding: 0;
+  /* width: 100%; */
+}
+
+html {
+  background: center / cover url("../images/nebo4.png");
 }
 
 .wrapper {
   display: flex;
   align-items: center;
-  height: 90vh;
+  height: 100vh;
   width: 90%;
-  max-width: 1500px;
+  /* max-width: 1500px; */
 }
 
 .left-column {
   display: flex;
   height: 500px;
   flex-basis: 60%;
-  background: linear-gradient(70deg, #f496a6, #c58ebc, #886de4);
+  /* background: linear-gradient(70deg, #f496a6, #c58ebc, #886de4); */
   border-radius: 10px 0 0 10px;
   flex-direction: column;
   justify-content: center;
@@ -31,13 +41,14 @@ body {
 }
 
 .bgLeft-column {
-  width: 90%;
+  width: 100%;
   height: 100%;
-  padding: 10px 40px;
-  background: center / cover url("./src/images/bg2.png");
+  /* padding: 10px 40px; */
+  background: center / cover url("../images/nebo.png");
   justify-content: center;
   align-items: center;
   display: flex;
+  /* backdrop-filter: blur(10px); */
 }
 
 .right-column {
@@ -79,11 +90,11 @@ body {
 }
 
 .userLoginText {
-  color: #897fbd;
+  color: #4c7db4;
 }
 
 .loginButton {
-  background: linear-gradient(70deg, #f496a6, #c58ebc, #886de4);
+  background: linear-gradient(70deg, #dbbeda, #bd72ad, #434794);
   padding: 10px 0;
   border-radius: 20px;
   border-width: 0px;
@@ -93,7 +104,8 @@ body {
 }
 
 .loginButton:hover {
-  background: linear-gradient(70deg, #ec8da2, #e26da4, #7a6aad);
+  background: linear-gradient(70deg, #d8bed7, #ad639d, #393c85);
+  cursor: pointer;
 }
 
 .loginButtonDiv {

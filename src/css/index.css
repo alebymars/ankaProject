@@ -1,0 +1,164 @@
+* {
+  outline: 0 !important;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  background: center / cover url("../images/back.png");
+  /* background-color: #d6d0eb; */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* backdrop-filter: blur(10px); */
+  margin: 0;
+  padding: 0;
+}
+
+.mainBlock {
+  width: 90%;
+  background-color: aqua;
+  height: 500px;
+  max-height: 500px;
+  border-radius: 10px;
+  padding: 10px;
+  flex-direction: row;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  /* backdrop-filter: blur(10px); */
+}
+
+.superMainBlock {
+  width: 100%;
+  /* background-color: rgb(231, 133, 133); */
+  height: 100vh;
+  /* border-radius: 5px;  */
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.divTown {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  /* background-color: blue; */
+  justify-content: center;
+  gap: 10px;
+}
+
+.inputTown {
+  width: 50%;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border-width: 0;
+}
+
+.inputButtonFind {
+  padding: 5px 10px;
+  border-radius: 10px;
+  border-width: 0;
+}
+
+.card {
+  display: flex;
+  background-color: rgb(149, 116, 196);
+  width: 48%;
+  min-width: 350px;
+  /* height: 400px; */
+  padding: 10px;
+  flex-direction: column;
+}
+
+.imageWeather {
+  width: 100px;
+  height: 100px;
+}
+
+.cardUpInfo {
+  display: flex;
+  width: 100%;
+  background-color: rgb(67, 163, 38);
+  /* align-items: center; */
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.cardUpInfoWeather {
+  display: flex;
+  width: 100%;
+  background-color: rgb(183, 206, 57);
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  overflow: hidden;
+  flex-direction: row;
+}
+
+.cardMiddleInfo {
+  display: flex;
+  width: 100%;
+  background-color: rgb(53, 175, 114);
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.cardDownInfo {
+  display: flex;
+  width: 100%;
+  background-color: rgb(70, 59, 119);
+  /* align-items: center;
+  justify-content: center; */
+  gap: 5px;
+  /* overflow: hidden; */
+  overflow: auto;
+  flex-wrap: nowrap;
+  /* white-space: nowrap; */
+}
+
+@media screen and (max-width: 990px) {
+}
+
+.hourWeather {
+  display: flex;
+  width: fit-content;
+  background-color: aqua;
+  padding: 0 10px;
+  flex-direction: column;
+}
+
+.cityText {
+  color: aliceblue;
+  padding: 0 30px;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.tempText {
+  color: aliceblue;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.conditionText {
+  color: aliceblue;
+  font-size: 23px;
+  font-weight: 700;
+  margin: 0;
+}
+
+
+.tempAndConditionDiv {
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    align-items: center;
+}

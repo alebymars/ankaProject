@@ -5,13 +5,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Receipts</title>
+    <title>Weather</title>
+    <link rel="stylesheet" href="../src/css/index.css" type="text/css" />
+    <script src="./js/index.js"></script>
 </head>
 
 <body>
-    <p>
-        Главная страница
-    </p>
+    <!-- <button onclick="fetchWeather('Кемерово', 1, '1d9ebef1a17c423393395143232305')">console.log</button> -->
+    <!-- <div id="main" class="main"></div> -->
+    <div class="superMainBlock">
+        <div class="divTown">
+            <input id="search" class="inputTown" type="text" placeholder="Кемерово" />
+            <input class="inputButtonFind" type="button" value="поиск " />
+            <select name="daysWeather">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select>
+        </div>
+        <div class="mainBlock">
+            <div class="card">
+                <div class="cardUpInfo">
+                    <p class="cityText">
+                        Кемерово
+                    </p>
+                    <div class="cardUpInfoWeather">
+                        <div class="tempAndConditionDiv">
+                            <p class="tempText">
+                                +20°C
+                            </p>
+                            <p class="conditionText">
+                                Ясно
+                            </p>
+                        </div>
+                        <img src="./images/sun.png" class="imageWeather" />
+                    </div>
+                </div>
+                <div class="cardMiddleInfo">
+                    <p>
+                        влажность: 50%
+                    </p>
+                    <p>
+                        ветер: 24м.с
+                    </p>
+                </div>
+                <div class="cardDownInfo">
+                    <div class="hourWeather">
+                        <p>
+                            19:00
+                        </p>
+                        <p>
+                            +20
+                        </p>
+                    </div>
+                    <div class="hourWeather">
+                        <p>
+                            19:00
+                        </p>
+                        <p>
+                            +20
+                        </p>
+                    </div>
+                    <div class="hourWeather">
+                        <p>
+                            19:00
+                        </p>
+                        <p>
+                            +20
+                        </p>
+                    </div>
+                    <div class="hourWeather">
+                        <p>
+                            19:00
+                        </p>
+                        <p>
+                            +20
+                        </p>
+                    </div>
+                    <div class="hourWeather">
+                        <p>
+                            19:00
+                        </p>
+                        <p>
+                            +20
+                        </p>
+                    </div>
+                    <div class="hourWeather">
+                        <p>
+                            19:00
+                        </p>
+                        <p>
+                            +20
+                        </p>
+                    </div>
+                    <div class="hourWeather">
+                        <p>
+                            19:00
+                        </p>
+                        <p>
+                            +20
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

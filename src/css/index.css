@@ -72,6 +72,7 @@ body {
   /* height: 400px; */
   padding: 10px;
   flex-direction: column;
+  border-radius: 10px;
 }
 
 .imageWeather {
@@ -79,10 +80,15 @@ body {
   height: 100px;
 }
 
+.imageIcon {
+  width: 20px;
+  height: 20px;
+}
+
 .cardUpInfo {
   display: flex;
   width: 100%;
-  background-color: rgb(67, 163, 38);
+  /* background-color: rgb(67, 163, 38); */
   /* align-items: center; */
   justify-content: center;
   overflow: hidden;
@@ -92,7 +98,7 @@ body {
 .cardUpInfoWeather {
   display: flex;
   width: 100%;
-  background-color: rgb(183, 206, 57);
+  /* background-color: rgb(183, 206, 57); */
   align-items: center;
   justify-content: space-around;
   gap: 10px;
@@ -103,7 +109,7 @@ body {
 .cardMiddleInfo {
   display: flex;
   width: 100%;
-  background-color: rgb(53, 175, 114);
+  /* background-color: rgb(53, 175, 114); */
   align-items: center;
   justify-content: center;
   gap: 10px;
@@ -113,7 +119,7 @@ body {
 .cardDownInfo {
   display: flex;
   width: 100%;
-  background-color: rgb(70, 59, 119);
+  /* background-color: rgb(70, 59, 119); */
   /* align-items: center;
   justify-content: center; */
   gap: 5px;
@@ -121,6 +127,11 @@ body {
   overflow: auto;
   flex-wrap: nowrap;
   /* white-space: nowrap; */
+  /* -ms-overflow-style: none; 
+  scrollbar-width: none;  */
+  overflow-x: scroll;
+  scrollbar-color: rgb(233, 119, 119) transparent;
+  scrollbar-width: thin;
 }
 
 @media screen and (max-width: 990px) {
@@ -129,9 +140,11 @@ body {
 .hourWeather {
   display: flex;
   width: fit-content;
-  background-color: aqua;
+  /* background-color: aqua; */
   padding: 0 10px;
   flex-direction: column;
+  align-items: center;
+  gap: 5px;
 }
 
 .cityText {
@@ -155,10 +168,23 @@ body {
   margin: 0;
 }
 
-
 .tempAndConditionDiv {
-    display: flex;
-    flex-direction: column;
-    /* background-color: aqua; */
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  /* background-color: aqua; */
+  align-items: center;
+}
+
+.timeWeatherText {
+  color: aliceblue;
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.timeText {
+  color: aliceblue;
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0;
 }

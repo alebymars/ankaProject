@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -11,13 +11,13 @@
 </head>
 
 <body>
-    <!-- <button onclick="fetchWeather('Кемерово', 1, '1d9ebef1a17c423393395143232305')">console.log</button> -->
+    <!-- <button onclick="fetchWeather(searchCity(), selectDay(), '1d9ebef1a17c423393395143232305')">Погода</button> -->
     <!-- <div id="main" class="main"></div> -->
     <div class="superMainBlock">
         <div class="divTown">
-            <input id="search" class="inputTown" type="text" placeholder="Кемерово" />
-            <input class="inputButtonFind" type="button" value="поиск " />
-            <select name="daysWeather">
+            <input id="searchCity" class="inputTown" type="text" placeholder="Кемерово" />
+            <input class="inputButtonFind" type="button" value="поиск " onclick="selectDay()" />
+            <select id="selectDay" name="daysWeather">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -26,9 +26,10 @@
                 <option value="6">6</option>
                 <option value="7">7</option>
             </select>
+            <input type="button" value="add card" onclick="addCard()">
         </div>
-        <div class="mainBlock">
-            <div class="card">
+        <div id="mainBlock" class="mainBlock">
+            <div id="card" class="card">
                 <div class="cardUpInfo">
                     <p class="cityText">
                         Кемерово

@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <!-- <button onclick="fetchWeather(searchCity(), selectDay(), '1d9ebef1a17c423393395143232305')">Погода</button> -->
+    <button onclick="fetchWeather(searchCity(), selectDay(), '1d9ebef1a17c423393395143232305')">Погода</button>
     <!-- <div id="main" class="main"></div> -->
     <div class="superMainBlock">
         <div class="divTown">
@@ -31,7 +31,7 @@
         <div id="mainBlock" class="mainBlock">
             <div id="card" class="card">
                 <div class="cardUpInfo">
-                    <p class="cityText">
+                    <p id="cityText" class="cityText">
                         Кемерово
                     </p>
                     <div class="cardUpInfoWeather">
@@ -39,29 +39,29 @@
                             <p class="tempText">
                                 +20°C
                             </p>
-                            <p class="conditionText">
+                            <p id="conditionText" class="conditionText">
                                 Ясно
                             </p>
                         </div>
-                        <img src="./images/sun.png" class="imageWeather" />
+                        <img id="imgWeather" src="./images/sun.png" class="imageWeather" />
                     </div>
                 </div>
                 <div class="cardMiddleInfo">
-                    <p>
+                    <p id="humidity">
                         влажность: 50%
                     </p>
                     <img src="./images/blob.png" class="imageIcon" />
-                    <p>
-                        ветер: 24м.с
+                    <p id="wind">
+                        ветер: 24км/ч
                     </p>
                     <img src="./images/wind.png" class="imageIcon" />
                 </div>
-                <div class="cardDownInfo">
-                    <div class="hourWeather">
-                        <p class="timeText">
+                <div id="cardDownInfo" class="cardDownInfo">
+                    <div id="hourWeather" class="hourWeather">
+                        <p id="timeText" class="timeText">
                             19:00
                         </p>
-                        <p class="timeWeatherText">
+                        <p id="weatherText" class="weatherText">
                             +20
                         </p>
                     </div>

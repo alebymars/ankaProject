@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/auth.css" type="text/css" />
+    <link rel="stylesheet" href="./src/css/main.css" type="text/css" />
+    <script src="./src/js/auth.js"></script>
+    <script src="./src/js/main.js"></script>
+    <title>MAIN</title>
+</head>
+
+<body>
+    <div id="header" class="header">
+        <p id="headerText" class="headerText">
+            Привет, username!
+        </p>
+    </div>
+    <div id="wrapper" class="wrapper">
+        <div class="left-column">
+            <div class="bgLeft-column">
+                <div class="divLeftBgText">
+                    <h1 class="welcomeText">
+                        <!-- FOOD-DOT-COM -->
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="right-column">
+            <h2 class="userLoginText">
+                USER AUTH
+            </h2>
+            <div class="form">
+                <div class="divField">
+                    <img class="icon" src="./src/images/user.png" />
+                    <input id="username" class="fieldLogin" type="text" title="username" value="example@mail.com" />
+                </div>
+                <div class="loginButtonDiv">
+                    <input type="button" class="loginButton" value="LOGIN" onclick="auth()" />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

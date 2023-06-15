@@ -67,6 +67,7 @@ html {
   display: flex;
   flex-direction: column;
   width: 300px;
+  gap: 10px;
 }
 
 .welcomeText {
@@ -91,6 +92,7 @@ html {
 
 .userLoginText {
   color: #4c7db4;
+  font-family: sans-serif;
 }
 
 .loginButton {
@@ -98,7 +100,6 @@ html {
   padding: 10px 0;
   border-radius: 20px;
   border-width: 0px;
-  margin-top: 10px;
   color: #fefefe;
   width: 150px;
 }
@@ -126,4 +127,5 @@ html {
   background-color: #eae6ff;
   border-radius: 20px;
   padding: 0 10px;
+  margin: 0 20px;
 }

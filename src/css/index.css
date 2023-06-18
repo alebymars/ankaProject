@@ -10,7 +10,7 @@
 
 body {
   display: flex;
-  background: center / cover url("../images/bg1.jpg");
+  /* background: center / cover url("../images/bg1.jpg"); */
   /* background-color: #d6d0eb; */
   /* justify-content: center; */
   /* align-items: center; */
@@ -22,15 +22,18 @@ body {
 }
 
 .mainBlock {
+  display: flex;
   width: 90%;
+  padding: 1rem;
+  row-gap: 1rem;
+  column-gap: 1rem;
   /* background-color: aqua; */
   /* height: 500px; */
   max-height: 500px;
   /* height: 100vh; */
   border-radius: 10px;
-  padding: 10px;
-  flex-direction: row;
-  display: flex;
+  /* padding: 10px; */
+  /* flex-direction: row; */
   flex-wrap: wrap;
   gap: 10px;
   /* align-items: center;
@@ -74,8 +77,8 @@ body {
 }
 
 .card {
-  display: flex;
-  /* background-color: rgb(149, 116, 196); */
+  flex-grow: 1;
+  flex-shrink: 0;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -84,9 +87,6 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
   width: 45%;
   min-width: 350px;
-  /* height: 400px; */
-  padding: 10px;
-  flex-direction: column;
   border-radius: 10px;
 }
 
@@ -100,6 +100,13 @@ body {
   height: 20px;
 }
 
+.dateText {
+  color: aliceblue;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
 .cardUpInfo {
   /* display: flex; */
   width: 100%;
@@ -108,6 +115,14 @@ body {
   justify-content: center;
   overflow: hidden;
   flex-direction: column;
+}
+
+.cardUpInfoCityAndDate {
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .cardUpInfoWeather {
@@ -125,11 +140,12 @@ body {
 .cardMiddleInfo {
   display: flex;
   width: 100%;
-  /* background-color: rgb(53, 175, 114); */
   align-items: center;
   justify-content: center;
   gap: 10px;
   overflow: hidden;
+  color: aliceblue;
+  font-size: 17px;
 }
 
 .cardDownInfo {

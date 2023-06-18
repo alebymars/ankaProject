@@ -8,7 +8,7 @@ const selectDay = () => {
 // возвращаем город из поля поиска.
 const searchCity = () => {
   const city = document.getElementById("searchCity").value;
-  console.log(`city => ${city}`);
+  // console.log(`city => ${city}`);
   return city;
 };
 
@@ -18,7 +18,7 @@ const addWeatherInfo = () => {
 
   infoWeather.map((data) => {
     const name = data.name;
-    console.log(`name => ${name}`);
+    // console.log(`name => ${name}`);
 
     // добавляем проверку, если undefined то ничего не возвращаем
     if (name == undefined) {

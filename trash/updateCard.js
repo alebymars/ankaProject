@@ -64,7 +64,7 @@ export const updateCard = () => {
   conditionText.innerHTML = infoWeather[1].condition.text;
   cityText.innerHTML = infoWeather[0].name;
 
-  console.log(infoWeather[0].name);
+  // console.log(infoWeather[0].name);
 };
 
 window.updateCard = updateCard;

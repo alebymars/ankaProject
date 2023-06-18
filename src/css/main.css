@@ -1,5 +1,8 @@
 .header {
+  display: flex;
+  justify-content: space-between;
   position: absolute;
+  flex-direction: row;
   top: 0;
   width: 100%;
   height: 50px;
@@ -10,5 +13,13 @@
 .headerText {
   color: aliceblue;
   font-family: sans-serif;
-  padding: 0 10px;
+  padding: 0 20px;
+}
+
+.headerButtonText {
+  color: aliceblue;
+  font-family: sans-serif;
+  padding: 0 20px;
+  cursor: pointer;
+  visibility: hidden;
 }

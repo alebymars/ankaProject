@@ -9,6 +9,17 @@ export const fetchWeather = async (city, day, apiKey) => {
       `http://api.weatherapi.com/v1/forecast.json?q=${city}&days=${day}&key=${apiKey}&lang=ru`
     );
 
+    // console.log(response.status);
+    if (response.status === 400) {
+      alert(
+        `Код ошибки: ${response.status}, введены некорректные данные, попробуйте изменить запрос!`
+      );
+      // const main = document.getElementById("mainBlock");
+      // const empty = document.createElement("p");
+      // empty.innerText = `Ошибка ${response.status}`;
+      // main.appendChild(empty);
+    }
+
     let data = await response.json();
 
     // console.log(`data => ${JSON.stringify(data)}`);
@@ -18,6 +29,9 @@ export const fetchWeather = async (city, day, apiKey) => {
     generateCards();
   } catch (e) {
     console.log(`Error => ${e}`);
+    // const empty = document.createElement("p");
+    // empty.append("Ошибка: ", e);
+    // main.appendChild(empty);
   }
 };
 

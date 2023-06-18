@@ -10,7 +10,7 @@
 
 body {
   display: flex;
-  background: center / cover url("../images/back.png");
+  background: center / cover url("../images/bg1.jpg");
   /* background-color: #d6d0eb; */
   /* justify-content: center; */
   /* align-items: center; */
@@ -18,14 +18,15 @@ body {
   /* backdrop-filter: blur(10px); */
   margin: 0;
   padding: 0;
+  overflow-x: hidden; /*позже убрать (скрываем скрол по X)*/
 }
 
 .mainBlock {
   width: 90%;
   /* background-color: aqua; */
   /* height: 500px; */
-  /* max-height: 500px; */
-  /* height: 100%; */
+  max-height: 500px;
+  /* height: 100vh; */
   border-radius: 10px;
   padding: 10px;
   flex-direction: row;

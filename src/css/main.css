@@ -2,7 +2,13 @@
   position: absolute;
   top: 0;
   width: 100%;
-  background-color: aliceblue;
   height: 50px;
-  padding: 0 20px;
+  backdrop-filter: blur(14.8px);
+  -webkit-backdrop-filter: blur(14.8px);
+}
+
+.headerText {
+  color: aliceblue;
+  font-family: sans-serif;
+  padding: 0 10px;
 }
